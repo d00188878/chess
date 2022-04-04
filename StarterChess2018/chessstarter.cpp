@@ -1,4 +1,4 @@
-// (your name here)
+// Melanie Lent
 // Chess animation starter kit.
 
 #include <stdlib.h>
@@ -21,7 +21,7 @@ using namespace std;
 GLdouble redMaterial[] = {0.7f, 0.1f, 0.2f, 1.0f};
 GLfloat greenMaterial[] = {0.1f, 0.7f, 0.4f, 1.0f};
 GLdouble brightGreenMaterial[] = {0.1, 0.9, 0.1, 1.0};
-GLfloat blueMaterial[] = {1.0f, 0.2f, 0.7f, 1.0f};
+GLfloat blueMaterial[] = {0.1f, 0.2f, 0.7f, 1.0f};
 GLfloat whiteMaterial[] = {1.0f, 1.0f, 1.0f, 1.0f};
 
 double screen_x = 600;
@@ -176,86 +176,158 @@ void display(void)
 
 
 
+	double whitePawn1KnockBackX;
+	double whitePawn1KnockBackY;
+	Interpolate(t, 23.25, 23.55, whitePawn1KnockBackX, 1000, -7000);
+	Interpolate(t, 23.25, 23.55, whitePawn1KnockBackY, 2000, -12000);
 	glPushMatrix();
-	glTranslatef(1000, 0, 2000);
+	glTranslatef(whitePawn1KnockBackX, 0, whitePawn1KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
+	double whitePawn2KnockBackX;
+	double whitePawn2KnockBackY;
+	Interpolate(t, 22.6, 22.85, whitePawn2KnockBackX, 2000, -8000);
+	Interpolate(t, 22.6, 22.85, whitePawn2KnockBackY, 2000, -14000);
 	glPushMatrix();
-	glTranslatef(2000, 0, 2000);
+	glTranslatef(whitePawn2KnockBackX, 0, whitePawn2KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
+	double whitePawn3KnockBackX;
+	double whitePawn3KnockBackY;
+	Interpolate(t, 21.7, 21.9, whitePawn3KnockBackX, 3000, -7000);
+	Interpolate(t, 21.7, 21.9, whitePawn3KnockBackY, 2000, -4000);
 	glPushMatrix();
-	glTranslatef(3000, 0, 2000);
+	glTranslatef(whitePawn3KnockBackX, 0, whitePawn3KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
+	double whitePawn4KnockBackX;
+	double whitePawn4KnockBackY;
+	Interpolate(t, 21.4, 21.65, whitePawn4KnockBackX, 4000, -12000);
+	Interpolate(t, 21.4, 21.65, whitePawn4KnockBackY, 2000, -18000);
 	glPushMatrix();
-	glTranslatef(5000, 0, 2000);
+	glTranslatef(whitePawn4KnockBackX, 0, whitePawn4KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
+	double whitePawn5KnockBackX;
+	double whitePawn5KnockBackY;
+	Interpolate(t, 20.7, 20.9, whitePawn5KnockBackX, 5000, -12000);
+	Interpolate(t, 20.7, 20.9, whitePawn5KnockBackY, 2000, -12000);
 	glPushMatrix();
-	glTranslatef(4000, 0, 2000);
-	glCallList(pawn);
-	glPopMatrix();
-
-	glPushMatrix();
-	glTranslatef(6000, 0, 2000);
-	glCallList(pawn);
-	glPopMatrix();
-
-	glPushMatrix();
-	glTranslatef(7000, 0, 2000);
+	glTranslatef(whitePawn5KnockBackX, 0, whitePawn5KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
 
-
-
-
+	double whitePawn6KnockBackX;
+	double whitePawn6KnockBackY;
+	Interpolate(t, 5.1, 5.35, whitePawn6KnockBackX, 6000, 28000);
+	Interpolate(t, 5.1, 5.35, whitePawn6KnockBackY, 2000, -36000);
 	glPushMatrix();
-	glTranslatef(2000, 0, 1000);
+	glTranslatef(whitePawn6KnockBackX, 0, whitePawn6KnockBackY);
+	glCallList(pawn);
+	glPopMatrix();
+
+	double whitePawn7KnockBackX;
+	double whitePawn7KnockBackY;
+	Interpolate(t, 18.85, 19.1, whitePawn7KnockBackX, 7000, 6000);
+	Interpolate(t, 18.85, 19.1, whitePawn7KnockBackY, 2000, -19000);
+	glPushMatrix();
+	glTranslatef(whitePawn7KnockBackX, 0, whitePawn7KnockBackY);
+	glCallList(pawn);
+	glPopMatrix();
+
+	double whitePawn8KnockBackX;
+	double whitePawn8KnockBackY;
+	Interpolate(t, 18.75, 19, whitePawn8KnockBackX, 8000, 28000);
+	Interpolate(t, 18.75, 19, whitePawn8KnockBackY, 2000, 2500);
+	glPushMatrix();
+	glTranslatef(whitePawn8KnockBackX, 0, whitePawn8KnockBackY);
+	glCallList(pawn);
+	glPopMatrix();
+
+
+
+
+	double rightWhiteKnightKnockBackX;
+	double rightWhiteKnightKnockBackY;
+	Interpolate(t, 21.75, 22, rightWhiteKnightKnockBackX, 2000, -8000);
+	Interpolate(t, 21.75, 22, rightWhiteKnightKnockBackY, 1000, -8000);
+	glPushMatrix();
+	glTranslatef(rightWhiteKnightKnockBackX, 0, rightWhiteKnightKnockBackY);
 	glCallList(knight);
 	glPopMatrix();
 
+	double leftWhiteKnightKnockBackX;
+	double leftWhiteKnightKnockBackY;
+	Interpolate(t, 5.15, 5.35, leftWhiteKnightKnockBackX, 7000, 28000);
+	Interpolate(t, 5.15, 5.35, leftWhiteKnightKnockBackY, 1000, -36000);
 	glPushMatrix();
-	glTranslatef(7000, 0, 1000);
+	glTranslatef(leftWhiteKnightKnockBackX, 0, leftWhiteKnightKnockBackY);
 	glCallList(knight);
 	glPopMatrix();
 
+	double rightWhiteBishopKnockBackX;
+	double rightWhiteBishopKnockBackY;
+	Interpolate(t, 22.4, 22.75, rightWhiteBishopKnockBackX, 3000, 28000);
+	Interpolate(t, 22.4, 22.75, rightWhiteBishopKnockBackY, 1000, -12000);
 	glPushMatrix();
-	glTranslatef(3000, 0, 1000);
+	glTranslatef(rightWhiteBishopKnockBackX, 0, rightWhiteBishopKnockBackY);
 	glCallList(bishop);
 	glPopMatrix();
 
+	double rightWhiteRookKnockBackX;
+	double rightWhiteRookKnockBackY;
+	Interpolate(t, 23.8, 24.05, rightWhiteRookKnockBackX, 1000, -6000);
+	Interpolate(t, 23.8 , 24.05, rightWhiteRookKnockBackY, 1000, -36000);
 	glPushMatrix();
-	glTranslatef(1000, 0, 1000);
+	glTranslatef(rightWhiteRookKnockBackX, 0, rightWhiteRookKnockBackY);
 	glCallList(rook);
 	glPopMatrix();
 
+	double leftWhiteRookKnockBackX;
+	double leftWhiteRookKnockBackY;
+	Interpolate(t, 19.1, 19.3, leftWhiteRookKnockBackX, 8000, 28000);
+	Interpolate(t, 19.1, 19.3, leftWhiteRookKnockBackY, 1000, -5000);
 	glPushMatrix();
-	glTranslatef(8000, 0, 1000);
+	glTranslatef(leftWhiteRookKnockBackX, 0, leftWhiteRookKnockBackY);
 	glCallList(rook);
 	glPopMatrix();
 
+	double whiteKingKnockBackX;
+	double whiteKingKnockBackY;
+	Interpolate(t, 20.75, 21, whiteKingKnockBackX, 4000, -12000);
+	Interpolate(t, 20.75, 21, whiteKingKnockBackY, 1000, -12000);
 	glPushMatrix();
-	glTranslatef(4000, 0, 1000);
-	glCallList(rook);
+	glTranslatef(whiteKingKnockBackX, 0, whiteKingKnockBackY);
+	glCallList(king);
 	glPopMatrix();
-
+	
 	double z;
+	double whiteQueenKnockBackX;
+	double whiteQueenKnockBackY;
 	Interpolate(t, 1.0, 3.0, z, 1000, 5000);
+	Interpolate(t, 5.175, 5.2, whiteQueenKnockBackX, 0, 600);
+	Interpolate(t, 5.175, 5.2, whiteQueenKnockBackY, 0, -50);
 	glPushMatrix();
 	glTranslatef(5000, 0, z);
+	glTranslatef(whiteQueenKnockBackX, 0, whiteQueenKnockBackY);
 	glCallList(queen);
 	glPopMatrix();
 
+	double leftWhiteBishopKnockBackX;
+	double leftWhiteBishopKnockBackY;
+	Interpolate(t, 19.4, 19.6, leftWhiteBishopKnockBackX, 6000, 9000);
+	Interpolate(t, 19.4, 19.6, leftWhiteBishopKnockBackY, 1000, -8000);
 	glPushMatrix();
-	glTranslatef(6000, 0, 1000);
+	glTranslatef(leftWhiteBishopKnockBackX, 0, leftWhiteBishopKnockBackY);
 	glCallList(bishop);
 	glPopMatrix();
+
+
 
 	// Set the color for one side (black), and draw its 16 pieces.
 	GLfloat mat_amb_diff2[] = {0.1f, 0.5f, 0.8f, 1.0};
@@ -267,13 +339,14 @@ void display(void)
 	double moveLeft;
 	double moveForward;
 	double moveRight2;
-	double standUp;
+	double standUp1;
+	double standUp2;
 	// move right
 	Interpolate(t, 6.0, 8.0, moveRight1, 4000, 2000);
 	// fall over
 	Interpolate(t, 4.0, 4.5, fallOver, 0, 90);
 	// spin for 24 seconds and kill the other pieces
-	Interpolate(t, 5.0, 26.0, startSpinning, 0, 25000);//15000.0);
+	Interpolate(t, 5.0, 26.0, startSpinning, 0, 24930);//15000.0);
 	// move left
 	Interpolate(t, 10.0, 15.0, moveLeft, 0, 6000);
 	// move towards the front of the board
@@ -281,7 +354,8 @@ void display(void)
 	// move back to the right of the board
 	Interpolate(t, 20.0, 25.0, moveRight2, 0, -6500);
 	// stand back up
-	Interpolate(t, 27.0, 27.5, standUp, 0, 90);
+	Interpolate(t, 27.0, 27.5, standUp1, 0, -90);
+	Interpolate(t, 27.0, 27.5, standUp2, 0, 90);
 
 	// begin animation!!!!
 
@@ -291,18 +365,28 @@ void display(void)
 	glTranslatef(moveLeft, 0, 0);
 	glTranslatef(0, moveForward, 0);
 	glTranslatef(moveRight2, 0, 0);
-	glRotatef(standUp, 1, 0, 0);
+	glRotatef(standUp1, 0, 10, 0);
+	//glRotatef(standUp2, 10, 0, 0);
 	glRotatef(startSpinning, 0, 0, 1);
 	glCallList(king);
 	glPopMatrix();
 
+
+	double blackQueenKnockBackX;
+	double blackQueenKnockBackY;
+	Interpolate(t, 5.1, 5.13, blackQueenKnockBackX, 5000, 5500);
+	Interpolate(t, 5.1, 5.13, blackQueenKnockBackY, 8000, 28000);
 	glPushMatrix();
-	glTranslatef(5000, 0, 8000);
+	glTranslatef(blackQueenKnockBackX, 0, blackQueenKnockBackY);
 	glCallList(queen);
 	glPopMatrix();
 
+	double leftBlackBishopKnockBackX;
+	double leftBlackBishopKnockBackY;
+	Interpolate(t, 5.1, 5.13, leftBlackBishopKnockBackX, 6000, 8000);
+	Interpolate(t, 5.1, 5.13, leftBlackBishopKnockBackY, 8000, 28000);
 	glPushMatrix();
-	glTranslatef(6000, 0, 8000);
+	glTranslatef(leftBlackBishopKnockBackX, 0, leftBlackBishopKnockBackY);
 	glCallList(bishop);
 	glPopMatrix();
 
@@ -333,8 +417,8 @@ void display(void)
 
 	double leftBlackKnightKnockBackX;
 	double leftBlackKnightKnockBackY;
-	Interpolate(t, 11, 11.3, leftBlackKnightKnockBackX, 7000, 32000);
-	Interpolate(t, 11, 11.3, leftBlackKnightKnockBackY, 8000, 40000);
+	Interpolate(t, 12.5, 12.8, leftBlackKnightKnockBackX, 7000, 32000);
+	Interpolate(t, 12.5, 12.8, leftBlackKnightKnockBackY, 8000, 40000);
 	glPushMatrix();
 	glTranslatef(leftBlackKnightKnockBackX, 0, leftBlackKnightKnockBackY);
 	glRotatef(180, 0, 80, 0);
@@ -342,9 +426,11 @@ void display(void)
 	glPopMatrix();
 
 	double rightBlackRookKnockBackX;
-	Interpolate(t, 7.15, 7.45, rightBlackRookKnockBackX, 1000, -28000);
+	double rightBlackRookKnockBackY;
+	Interpolate(t, 7.15, 7.25, rightBlackRookKnockBackX, 1000, -10000);
+	Interpolate(t, 7.15, 7.25, leftBlackKnightKnockBackY, 8000, -5000);
 	glPushMatrix();
-	glTranslatef(rightBlackRookKnockBackX, 0, 8000);
+	glTranslatef(rightBlackRookKnockBackX, 0, leftBlackKnightKnockBackY);
 	glCallList(rook);
 	glPopMatrix();
 
@@ -379,43 +465,55 @@ void display(void)
 
 	double blackPawn6KnockBackX;
 	double blackPawn6KnockBackY;
+	Interpolate(t, 5.15, 5.35, blackPawn6KnockBackX, 3000, 28000);
+	Interpolate(t, 5.15, 5.35, blackPawn6KnockBackY, 7000, -36000);
 	glPushMatrix();
-	glTranslatef(3000, 0, 7000);
+	glTranslatef(blackPawn6KnockBackX, 0, blackPawn6KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
 	double blackPawn5KnockBackX;
 	double blackPawn5KnockBackY;
+	Interpolate(t, 5.15, 5.35, blackPawn5KnockBackX, 4000, 28000);
+	Interpolate(t, 5.15, 5.35, blackPawn5KnockBackY, 7000, -10000);
 	glPushMatrix();
-	glTranslatef(4000, 0, 7000);
+	glTranslatef(blackPawn5KnockBackX, 0, blackPawn5KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
 	double blackPawn4KnockBackX;
 	double blackPawn4KnockBackY;
+	Interpolate(t, 5.175, 5.35, blackPawn4KnockBackX, 5000, 28000);
+	Interpolate(t, 5.175, 5.35, blackPawn4KnockBackY, 7000, -10000);
 	glPushMatrix();
-	glTranslatef(5000, 0, 7000);
+	glTranslatef(blackPawn4KnockBackX, 0, blackPawn4KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
 	double blackPawn3KnockBackX;
-	double blackPawn3KnockBacky;
+	double blackPawn3KnockBackY;
+	Interpolate(t, 12, 12.2, blackPawn3KnockBackX, 6000, 5500);
+	Interpolate(t, 12, 12.2, blackPawn3KnockBackY, 7000, 28000);
 	glPushMatrix();
-	glTranslatef(6000, 0, 7000);
+	glTranslatef(blackPawn3KnockBackX, 0, blackPawn3KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
 	double blackPawn2KnockBackX;
 	double blackPawn2KnockBackY;
+	Interpolate(t, 12.7, 12.9, blackPawn2KnockBackX, 7000, 5500);
+	Interpolate(t, 12.7, 12.9, blackPawn2KnockBackY, 7000, 28000);
 	glPushMatrix();
-	glTranslatef(7000, 0, 7000);
+	glTranslatef(blackPawn2KnockBackX, 0, blackPawn2KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 
 	double blackPawn1KnockBackX;
 	double blackPawn1KnockBackY;
+	Interpolate(t, 13.2, 13.4, blackPawn1KnockBackX, 8000, 5500);
+	Interpolate(t, 13.2, 13.4, blackPawn1KnockBackY, 7000, 28000);
 	glPushMatrix();
-	glTranslatef(8000, 0, 7000);
+	glTranslatef(blackPawn1KnockBackX, 0, blackPawn1KnockBackY);
 	glCallList(pawn);
 	glPopMatrix();
 

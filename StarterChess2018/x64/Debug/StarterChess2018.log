@@ -1,0 +1,32 @@
+﻿  chessstarter.cpp
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(395,9): warning C4101: 'blackPawn4KnockBackY': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(380,9): warning C4101: 'blackPawn6KnockBackX': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(402,9): warning C4101: 'blackPawn3KnockBacky': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(416,9): warning C4101: 'blackPawn1KnockBackY': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(415,9): warning C4101: 'blackPawn1KnockBackX': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(401,9): warning C4101: 'blackPawn3KnockBackX': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(409,9): warning C4101: 'blackPawn2KnockBackY': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(408,9): warning C4101: 'blackPawn2KnockBackX': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(388,9): warning C4101: 'blackPawn5KnockBackY': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(387,9): warning C4101: 'blackPawn5KnockBackX': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(381,9): warning C4101: 'blackPawn6KnockBackY': unreferenced local variable
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\StarterChess2018\chessstarter.cpp(394,9): warning C4101: 'blackPawn4KnockBackX': unreferenced local variable
+  world.cpp
+  Generating Code...
+chessstarter.obj : error LNK2019: unresolved external symbol __imp___glutInitWithExit referenced in function glutInit_ATEXIT_HACK
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutInitDisplayMode referenced in function main
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowPosition referenced in function main
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowSize referenced in function main
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutMainLoop referenced in function main
+chessstarter.obj : error LNK2019: unresolved external symbol __imp___glutCreateWindowWithExit referenced in function glutCreateWindow_ATEXIT_HACK
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutPostRedisplay referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutSwapBuffers referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutDisplayFunc referenced in function main
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutReshapeFunc referenced in function main
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutKeyboardFunc referenced in function main
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutMouseFunc referenced in function main
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutBitmapCharacter referenced in function "void __cdecl text_output(double,double,char const *)" (?text_output@@YAXNNPEBD@Z)
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutGameModeString referenced in function main
+chessstarter.obj : error LNK2019: unresolved external symbol __imp_glutEnterGameMode referenced in function main
+glut32.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\01mkl\Desktop\compsci\cs 3600\chess\x64\Debug\StarterChess2018.exe : fatal error LNK1120: 15 unresolved externals

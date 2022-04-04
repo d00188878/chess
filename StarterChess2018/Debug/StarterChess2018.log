@@ -1,14 +1,2 @@
-﻿  chessstarter.cpp
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(395,9): warning C4101: 'blackPawn4KnockBackY': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(380,9): warning C4101: 'blackPawn6KnockBackX': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(402,9): warning C4101: 'blackPawn3KnockBacky': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(416,9): warning C4101: 'blackPawn1KnockBackY': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(415,9): warning C4101: 'blackPawn1KnockBackX': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(401,9): warning C4101: 'blackPawn3KnockBackX': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(409,9): warning C4101: 'blackPawn2KnockBackY': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(408,9): warning C4101: 'blackPawn2KnockBackX': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(388,9): warning C4101: 'blackPawn5KnockBackY': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(387,9): warning C4101: 'blackPawn5KnockBackX': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(381,9): warning C4101: 'blackPawn6KnockBackY': unreferenced local variable
-C:\Users\bonedoggle\Desktop\StarterChess2018\StarterChess2018\chessstarter.cpp(394,9): warning C4101: 'blackPawn4KnockBackX': unreferenced local variable
-  StarterChess2018.vcxproj -> C:\Users\bonedoggle\Desktop\StarterChess2018\Debug\StarterChess2018.exe
+﻿  world.cpp
+  StarterChess2018.vcxproj -> C:\Users\01mkl\Desktop\compsci\cs 3600\chess\Debug\StarterChess2018.exe
